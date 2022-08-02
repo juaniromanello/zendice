@@ -1,0 +1,112 @@
+body {
+    background-color: black;
+    display: inline-grid;
+    place-items: center;
+    width: 100%;
+    font-family: 'vcr_osd_monoregular';
+    overflow-x: hidden;
+}
+
+.simon {
+    position: relative;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.buttonContainer {
+    display: inline-grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+    transform: rotate(45deg);
+}
+
+.square {
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.square:active,
+.active {
+    filter: brightness(165%);
+}
+
+.red {
+    background-color: #6d0808;
+    
+}
+
+.blue {
+    background-color: #118686;
+    
+}
+
+.green {
+    background-color: #187719;
+    
+}
+
+.yellow {
+    background-color: #610261;
+    
+}
+
+#startButton {
+    width: 150px;
+    font-size: large;
+    position: absolute;
+    top: 500px;
+    left: 400px;
+    margin-left: 20px;
+    border: none;
+    font-family: 'vcr_osd_monoregular';
+    cursor: pointer;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+}
+#linkButton {
+    width: 150px;
+    font-size: large;
+    position: absolute;
+    top: 500px;
+    left: 400px;
+    margin-left: 20px;
+    border: none;
+    font-family: 'vcr_osd_monoregular';
+    cursor: pointer;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+}
+
+#startButton:disabled {
+    background-color: gray;
+}
+#linkButton:disabled {
+    background-color: gray;
+}
+
+.title {
+    width: min-content;
+}
+
+.winner {
+    animation: spin 1s ease-in-out;
+}
+
+@keyframes spin { 
+    100% { transform:rotate(180deg) } }
+
+h1{
+    color: white;
+    font-size: 100px;
+}
+
+#round{
+    color: white;
+}
